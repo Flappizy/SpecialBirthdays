@@ -1,0 +1,21 @@
+﻿@inherits LayoutComponentBase
+
+    <head>
+        <link href="CustomStyleSheet.css" rel="stylesheet" />
+    </head>
+
+<div class="page pink-gradient headerBorder">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <div class="main">
+        <div class="top-row px-4 auth bg-white">
+            <LoginDisplay />
+        </div>
+
+        <div class="content px-4">
+            @Body
+        </div>
+    </div>
+</div>

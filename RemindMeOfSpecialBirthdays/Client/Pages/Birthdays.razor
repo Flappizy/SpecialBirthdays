@@ -1,0 +1,35 @@
+﻿@page "/specialbirthdays"
+
+@if (ListOfPersonsSpecialBirthdays.Count == 0)
+{
+<div class="container">
+    <div class="col bg-white border border-pink rounded text-pink shadow mb-3 ">
+        <h4>You have not added any birthday we could track for you</h4>
+        <p>You can start adding a person's birthday<a href="/createpersonbirthday"> here</a></p>
+    </div>
+</div>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-5">
+            <RealTimeSearch OnSearchChanged="SearchChanged" />
+        </div>
+    </div>
+
+    <div class="text-center bg-white border border-pink rounded text-pink text-capitalize shadow mb-3">
+        <h1>Your SpecialBirthdays</h1>
+    </div>
+
+    <div class="container">
+        <div class="col bg-white border border-pink rounded text-pink shadow mb-3 ">
+            <SpecialBirthdaysTable SpecialBirthdays="ListOfPersonsSpecialBirthdays" OnDeleted="DeletePerson" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <Pagination MetaData="PageMetaData" Spread="2" SelectedPage="SelectedPage" />
+        </div>
+    </div>
+}

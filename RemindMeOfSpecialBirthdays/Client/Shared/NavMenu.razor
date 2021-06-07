@@ -1,0 +1,61 @@
+﻿
+
+<div class="pink-gradient">
+    <div class="top-row pl-4 navbar navbar-dark">
+        <a class="navbar-brand" href="">SpecialBirthdays</a>
+        <button class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+
+    <div class="pink-gradient @NavMenuCssClass" @onclick="ToggleNavMenu">
+        <ul class="nav flex-column">
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                    <span class="oi oi-home" aria-hidden="true"></span> Home
+                </NavLink>
+            </li>
+            <AuthorizeView>
+                <Authorized>
+                    <li class="nav-item px-3">
+                        <NavLink class="nav-link" href="specialbirthdays">
+                            <span class="fa fa-birthday-cake mr-3" aria-hidden="true"></span> Special Birthdays
+                        </NavLink>
+                    </li>
+                    <li class="nav-item px-3">
+                        <NavLink class="nav-link" href="createpersonbirthday">
+                            <span class="oi oi-plus" aria-hidden="true"></span> Add Birthday
+                        </NavLink>
+                    </li>
+                    <li class="nav-item px-3">
+                        <NavLink class="nav-link" href="notification">
+                            <span class="fa fa-bell mr-3" aria-hidden="true"></span>  Notification
+                        </NavLink>
+                    </li>
+                    <li class="nav-item px-3">
+                        <NavLink class="nav-link" href="authentication/profile">
+                            <span class="far fa-id-card mr-3" aria-hidden="true"></span>  Profile
+                        </NavLink>
+                    </li>
+                </Authorized>
+            </AuthorizeView>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="messagestore">
+                    <span class="fas fa-envelope-square mr-3" aria-hidden="true"></span>  Birthday Messages
+                </NavLink>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

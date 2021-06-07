@@ -1,0 +1,37 @@
+﻿
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Name</th>
+                <th scope="col">Birthday</th>
+                <th scope="col">Update</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var personBirthday in SpecialBirthdays)
+            {
+                <tr>
+                    <td>
+                        <i class="fa fa-birthday-cake"></i>
+                    </td>
+                    <td class="align-middle">
+                        @personBirthday.Name
+                    </td>
+                    <td class="align-middle">
+                        @personBirthday.BirthDay.ToShortDateString()
+                    </td>
+                    <td class="align-middle">
+                        <button type="button" class="btn btn-info" @onclick="() => RedirectToUpdate(personBirthday.PersonId)">Update</button>
+                    </td>
+                    <td class="align-middle">
+                        <button type="button" class="btn btn-danger" @onclick="() => Delete(personBirthday.PersonId)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

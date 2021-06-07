@@ -1,0 +1,26 @@
+﻿@page "/notification"
+
+<div>
+    <h3 class="text-center bg-white border border-pink rounded text-pink text-capitalize shadow mb-3">Notification</h3>
+</div>
+
+<div class="text-center bg-white border border-pink rounded text-pink shadow mb-3">
+    <p>Fill the form with the email info you want to be notified with</p>
+</div>
+
+<EditForm Model="userInfo" OnSubmit="SumbitNotificationInfo" class="card card-body bg-light mt-5">
+    <div class="form-group row">
+        <label for="name" class="col-md-2 col-form-label">Email:</label>
+        <div class="col-md-10">
+            <InputText type="email" id="name" class="form-control" @bind-Value="userInfo.MailAddress" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+    </div>
+</EditForm>
+<EmptyFieldValueNotification @ref="failedNotication" />
+<SuccessNotification @ref="successNotification" />

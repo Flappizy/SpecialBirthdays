@@ -1,0 +1,22 @@
+﻿@RenderSection("Scripts", required: false)
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/app.css" rel="stylesheet" />
+    <link href="~/CustomStyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="bg-dark text-white p-2" style=" background-color: #a4508b; background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);">
+        <span class="navbar-brand ml-2"><a href="https://localhost:5031" class="text-white text-decoration-none">SpecialBirthdays</a></span>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

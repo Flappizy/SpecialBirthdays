@@ -1,0 +1,29 @@
+﻿@page "/messagestore"
+
+<h3 class="text-center border border-pink text-pink bg-white mb-3 shadow rounded text-capitalize"><b>MessageStore</b></h3>
+
+@if (BirthdayMessages.Count == 0)
+{
+    <p>Message Store empty</p>
+}
+else
+{
+<div class="container">
+    @foreach (var birthdayMessage in BirthdayMessages)
+    {
+        
+        <CopyToClipboardButton Text="@birthdayMessage.Message" />
+        <div class="col" height="100">
+            <p class=" border border-pink  bg-white shadow rounded mb-3">@birthdayMessage.Message</p>
+        </div>
+    }
+</div>
+}
+
+
+
+<div class="text-center">
+    <div class="align-middle btn">
+        <button type="button" class="btn btn-info" @onclick="() => GetBirthdayMessages()">Get Birthday message</button>
+    </div>
+</div>

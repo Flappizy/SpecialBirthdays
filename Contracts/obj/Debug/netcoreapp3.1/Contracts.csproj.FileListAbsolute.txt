@@ -1,0 +1,12 @@
+C:\Users\Hp\source\repos\RemindMeOfSpecialBirthdays\Contracts\bin\Debug\netcoreapp3.1\Contracts.deps.json
+C:\Users\Hp\source\repos\RemindMeOfSpecialBirthdays\Contracts\bin\Debug\netcoreapp3.1\Contracts.dll
+C:\Users\Hp\source\repos\RemindMeOfSpecialBirthdays\Contracts\bin\Debug\netcoreapp3.1\Contracts.pdb
+C:\Users\Hp\source\repos\RemindMeOfSpecialBirthdays\Contracts\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\Hp\source\repos\RemindMeOfSpecialBirthdays\Contracts\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\Hp\source\repos\RemindMeOfSpecialBirthdays\Contracts\obj\Debug\netcoreapp3.1\Contracts.csprojAssemblyReference.cache
+C:\Users\Hp\source\repos\RemindMeOfSpecialBirthdays\Contracts\obj\Debug\netcoreapp3.1\Contracts.AssemblyInfoInputs.cache
+C:\Users\Hp\source\repos\RemindMeOfSpecialBirthdays\Contracts\obj\Debug\netcoreapp3.1\Contracts.AssemblyInfo.cs
+C:\Users\Hp\source\repos\RemindMeOfSpecialBirthdays\Contracts\obj\Debug\netcoreapp3.1\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\RemindMeOfSpecialBirthdays\Contracts\obj\Debug\netcoreapp3.1\Contracts.csproj.CopyComplete
+C:\Users\Hp\source\repos\RemindMeOfSpecialBirthdays\Contracts\obj\Debug\netcoreapp3.1\Contracts.dll
+C:\Users\Hp\source\repos\RemindMeOfSpecialBirthdays\Contracts\obj\Debug\netcoreapp3.1\Contracts.pdb

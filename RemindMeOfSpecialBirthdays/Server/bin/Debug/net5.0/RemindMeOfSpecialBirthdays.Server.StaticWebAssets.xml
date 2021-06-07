@@ -1,0 +1,7 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication" Path="C:\Users\Hp\.nuget\packages\microsoft.aspnetcore.components.webassembly.authentication\5.0.4\build\..\staticwebassets\" />
+  <ContentRoot BasePath="/" Path="C:\Users\Hp\source\repos\RemindMeOfSpecialBirthdays\RemindMeOfSpecialBirthdays\Client\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\Hp\source\repos\RemindMeOfSpecialBirthdays\RemindMeOfSpecialBirthdays\Client\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="/" Path="C:\Users\Hp\source\repos\RemindMeOfSpecialBirthdays\RemindMeOfSpecialBirthdays\Client\wwwroot\" />
+  <ContentRoot BasePath="/Identity" Path="C:\Users\Hp\.nuget\packages\microsoft.aspnetcore.identity.ui\5.0.6\staticwebassets\V4\" />
+</StaticWebAssets>
